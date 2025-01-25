@@ -1,0 +1,50 @@
+.MostPopularTools {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.popularToolsText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem;
+}
+
+.popularToolsText > p:first-child {
+    color: var(--color-text-primary);
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 6rem;
+}
+
+.popularToolsText > p:last-child {
+    color: var(--color-text-secondary);
+    font-size: 1rem;
+    width: 60%;
+    text-align: center;
+}
+
+
+.popularToolCards {
+    width: 90%;
+    display: grid;
+    justify-items: center;
+    grid-row-gap: 7rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+}
+
+
+.LoadMore {
+    margin-top: 5rem;
+    color: var(--color-highlight);
+    border: 1px solid var(--color-text-secondary);
+    background: none;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+}

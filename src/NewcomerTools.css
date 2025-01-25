@@ -1,0 +1,43 @@
+.NewcomerTools {
+    width: calc(100% - 10rem);
+    display: flex;
+    flex-direction: row;
+    padding: 5rem;
+    justify-content: space-between;
+}
+
+.NewcomerToolsText {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.NewcomerToolsText > .Title {
+    font-size: 3rem;
+    color: var(--color-text-primary);
+}
+
+.NewcomerToolsText > .Description {
+    font-size: 1.5rem;
+    color: var(--color-text-secondary);
+
+}
+
+.NewcomerToolsText > button {
+    border: none;
+    background: var(--color-highlight);
+    color: var(--color-text-primary);
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 0.5rem;
+    width: 12rem;
+    height: 3rem;
+    font-size: 1.1rem;
+}
+
+.NewcomerToolCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+}

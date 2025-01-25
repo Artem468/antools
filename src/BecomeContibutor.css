@@ -1,0 +1,47 @@
+.BecomeContributor {
+    padding: 10rem 0 10rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.BecomeContributor .Title {
+    color: var(--color-text-primary);
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.BecomeContributor .Description {
+    color: var(--color-text-secondary);
+    font-size: 1.5rem;
+    width: 35rem;
+    text-align: center;
+}
+
+.BecomeContributorInput {
+    padding: 0.7rem 0.7rem 0.7rem 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+}
+
+.BecomeContributorInput > input {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--color-text-secondary);
+    font-size: 1.2rem;
+}
+
+.BecomeContributorInput > button {
+    border: none;
+    background: var(--color-highlight);
+    color: var(--color-text-primary);
+    width: 10rem;
+    height: 3rem;
+    border-radius: 0.7rem;
+}
