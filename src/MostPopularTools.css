@@ -19,6 +19,7 @@
     font-size: 3rem;
     font-weight: 600;
     line-height: 6rem;
+    text-align: center;
 }
 
 .popularToolsText > p:last-child {
@@ -34,7 +35,7 @@
     display: grid;
     justify-items: center;
     grid-row-gap: 7rem;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     grid-template-rows: auto;
 }
 
@@ -47,4 +48,33 @@
     padding: 1rem 2rem 1rem 2rem;
     border-radius: 0.5rem;
     font-weight: 600;
+}
+
+@media (max-width: 790px) {
+    .popularToolsText {
+        padding: 7rem 1rem;
+    }
+
+    .popularToolsText > p:first-child {
+        font-size: 3rem;
+    }
+
+    .popularToolsText > p:last-child {
+        width: 80%;
+    }
+
+    .popularToolCards {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 355px) {
+    .popularToolsText > p:first-child {
+        font-size: 2rem;
+    }
+
+    .popularToolsText > p:last-child {
+        width: 80%;
+    }
 }

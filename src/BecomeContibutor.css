@@ -21,27 +21,30 @@
 }
 
 .BecomeContributorInput {
-    padding: 0.7rem 0.7rem 0.7rem 2rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
-    background: rgba(255, 255, 255, 0.1);
     border-radius: 1rem;
 }
 
 .BecomeContributorInput > input {
     border: none;
     outline: none;
-    background: transparent;
+    background: rgba(255, 255, 255, 0.1);
     color: var(--color-text-secondary);
     font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+
 }
 
 .BecomeContributorInput > button {
     border: none;
     background: var(--color-highlight);
     color: var(--color-text-primary);
-    width: 10rem;
+    width: 100%;
     height: 3rem;
     border-radius: 0.7rem;
 }
