@@ -1,9 +1,12 @@
 nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 2rem 4rem 2rem 4rem;
+    flex-wrap: wrap;
+    gap: 20%;
+    height: 7rem;
+    padding: 2rem;
 }
 
 nav div {
@@ -70,14 +73,15 @@ header {
         "primary img"
         "secondary img"
         "search img"
-        "social img"
+        "social img";
+    height: 40rem;
 }
 
 .headerPrimary {
     grid-area: primary;
     color: var(--color-text-primary);
     font-size: 3rem;
-    width: 40rem;
+    width: 35rem;
 }
 
 .headerPrimary span {
@@ -100,7 +104,7 @@ header {
     justify-content: end;
     gap: 0.5rem;
     background: rgba(255, 255, 255, 0.05);
-    width: 25.5rem;
+    width: 25rem;
     border-radius: 1.2rem;
 }
 
@@ -130,4 +134,30 @@ header {
 .headerImg {
     grid-area: img;
     justify-self: end;
+}
+
+
+@media (max-width: 1200px) {
+    .headerImg {
+        display: none;
+    }
+}
+
+@media (max-width: 680px) {
+    header {
+        grid-template-columns: auto;
+        padding: 3rem 1rem 1rem 1rem;
+        grid-template-rows: 20% 20% 20% 10%;
+    }
+
+    .headerPrimary {
+        width: 25rem;
+        font-size: 2rem;
+    }
+
+    .headerSecondary {
+        width: 20rem;
+        font-size: 0.9rem;
+    }
+
 }

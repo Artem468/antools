@@ -96,6 +96,10 @@
 }
 
 @media (max-width: 560px) {
+    .NewcomerTools {
+        padding: 0;
+    }
+
     .NewcomerToolsText {
         grid-template-rows: 6rem 8rem 7rem;
 
