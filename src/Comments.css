@@ -50,3 +50,10 @@
     left: -35rem;
     top: -7rem;
 }
+
+@media (max-width: 1430px) {
+    .Comments {
+        display: none;
+    }
+
+}

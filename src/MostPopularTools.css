@@ -66,6 +66,10 @@
     .popularToolCards {
         width: 100%;
     }
+
+    .popularToolCards {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
 }
 
 
